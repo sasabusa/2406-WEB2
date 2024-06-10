@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .menu{
+            width: 250px;
+            background-color: lightseagreen;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            /* align-items: stretch; */
+        }
+        ul > li{
+            text-align: center;
+
+        }
+        .up-li{
+            background-color: yellow;
+            margin-bottom: 84px;
+        }
+        .down-li{
+            background-color: pink;
+        }
+        .main-box{
+            display: flex;
+            gap: 10px
+        }
+        .main{
+            border: 1px solid black;
+            width: 100%
+        }
+        article{
+            margin-bottom: 20px;
+        }
+        .aside{
+            width: 200px;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 700;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/logo.jpg" alt="" width="200px;">
+        </div>
+        <div class="menu">
+            <ul class="up-li">
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+            <ul class="down-li">
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-box">
+        <div class="main">
+            <article>
+                <h2>Main Articles</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores exercitationem voluptas iusto repudiandae quidem, facere eveniet consequatur officia fugiat.
+                </p>
+            </article>
+            <article>
+                <h2>Main Articles</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores exercitationem voluptas iusto repudiandae quidem, facere eveniet consequatur officia fugiat.
+                </p>
+            </article>
+            <article>
+                <h2>Main Articles</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores exercitationem voluptas iusto repudiandae quidem, facere eveniet consequatur officia fugiat.
+                </p>
+            </article>
+        </div>
+        <div class="aside">
+        <h2>Right aside</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas corporis fugiat quis laborum similique, magni odit rem! Repellendus, eaque vero!
+        </p>
+        <input type="text">
+        <div>
+            <h3>TEXT</h3>
+            <p>
+                banner
+            </p>
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+        HTML5 copyright
+    </footer>
+</body>
+</html>
