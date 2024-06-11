@@ -6,80 +6,156 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
+        body{
+            padding: 10px;
+        }
         header{
+            width: 1000px;
+            height: 120px;
+            border: 1px solid black;
+
             display: flex;
             justify-content: space-between;
+            margin: 0 auto;
             margin-bottom: 10px;
+            box-sizing: border-box;
         }
-        .menu{
-            width: 250px;
+        h1{
+            font-size: 23px;
+            font-weight: 900;
+            background-color: darkblue;
+            color: white;
+            width: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            /* line-height: 120px; */
+        }
+
+        nav{
+            /* width: 250px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             background-color: lightseagreen;
         }
-        ul{
+
+        .menu{
             display: flex;
             justify-content: space-between;
-            /* align-items: stretch; */
+            background-color: darkblue;
         }
-        ul > li{
-            text-align: center;
+        .menu:last-child{
+            background-color: orange;
+        }
+        .menu a{
+            display: block;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+        }
+
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        main{
+            border: 1px solid black;
+            width: 100%;
+            /* flex-grow: 2; */
+        }
+
+        article{
+            margin: 20px;
+            /* border: 1px solid black; */
+        }
+        article>p{
+            line-height: 120%;
+        }
+        aside>p{
+            line-height: 120%;
+        }
+        aside{
+            width: 365px;
+            border: 1px solid black;
+            padding: 20px;
+            /* flex-grow: 1; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: flex-start; */
 
         }
-        .up-li{
-            background-color: yellow;
-            margin-bottom: 84px;
-        }
-        .down-li{
-            background-color: pink;
-        }
-        .container{
-            display: flex;
-            gap: 10px
-            /* margin-bottom: 10px; */ /* 왜 이 tag가 이상하게 적용이 될까/ */
-        }
-        .main{
-            border: 1px solid black;
-            width: 100%
-        }
-        article{
+        aside>p{
             margin-bottom: 20px;
         }
-        .aside{
-            width: 200px;
-        }
+
         h2{
             font-size: 20px;
             font-weight: 700;
+            padding: 7px;
+            margin-bottom: 5px;
+            border-radius: 15px;
+        }
+        article>h2{
             background-color: lightpink;
         }
+        aside>h2{
+            background-color: darkblue;
+            color: white;
+        }
+        .aside-input{
+            margin-top: 20px;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .aside-input{
+            font-weight: 900;
+        }
         footer{
-            margin-top: 10px;
+            width: 1000px;
+            margin: 0 auto;
+            /* margin-top: 10px; */
+            /* height: 70px; */
             text-align: center;
+            background-color: pink;
+            /* line-height: 70px; */
+            padding: 30px 0;
+            font-weight: 900;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <img src="../img/logo.jpg" alt="" width="200px;">
-        </div>
-        <div class="menu">
-            <ul class="up-li">
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
+        <h1>WEB - LOGO</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
             </ul>
-            <ul class="down-li">
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">menu</a></li>
+            <ul class="menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <div class="container">
-        <div class="main">
+        <main>
             <article>
                 <h2>Main Articles</h2>
                 <p>
@@ -98,25 +174,26 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores exercitationem voluptas iusto repudiandae quidem, facere eveniet consequatur officia fugiat.
                 </p>
             </article>
-        </div>
+        </main>
         
-        <div class="aside">
+        <aside>
             <h2>Right aside</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas corporis fugiat quis laborum similique.
             </p>
             <input type="text">
-            <div>
+            <button>버튼</button>
+            <div class="aside-input">
                 <h3>TEXT</h3>
                 <p>
                     banner
                 </p>
             </div>
-        </div>
+        </aside>
     </div>
     
     <footer>
-        HTML5 copyright
+        &copy; HTML5 copyright
     </footer>
 </body>
 </html>
