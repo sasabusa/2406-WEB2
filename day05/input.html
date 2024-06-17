@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .input-box{
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- input은 form의 구성 요소로서 사용하는 태그이지만, form 없이 별도로 사용 가능 -->
+        <div class="input-box">
+            <h3>text</h3>
+            <input type="text">
+        </div>
+
+        <div class="input-box">
+            <h3>password</h3>
+            <input type="password" name="" id="">
+        </div>
+
+        <div class="input-box">
+            <h3>checkbox</h3>
+            <input type="checkbox" checked name="숨김이름지정" id="" style="display: none;">
+        </div>
+
+        <div class="input-box">
+            <h3>radio</h3>
+            <!-- 제출하는 라디오 버튼 사용 시 value 필수 -->
+            <!-- name 값을 맞춰주면 하나의 그룹으로 묶어 한 버튼만 선택되게 한다. -->
+            <input type="radio" name="test" id="first" value="very">
+            <label for="first">
+                매우
+            </label>
+            <input type="radio" name="test" id="second" value="usual">
+            <label for="second">
+                보통
+            </label>
+            <input type="radio" name="test" id="third" value="soso">
+            <label for="third">
+                그저
+            </label>
+            <input type="radio" name="test" id="foruth" value="bad">
+            <label for="foruth">
+                나쁨
+            </label>
+        </div>
+
+        <input type="submit" value="제출버튼">
+
+        <input type="">
+
+    </form>
+
+
+
+</body>
+</html>
