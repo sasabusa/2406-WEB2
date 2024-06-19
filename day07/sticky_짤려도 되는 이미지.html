@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        img{
+            display: block;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .margin-section{
+            height: 1000px;
+        }
+        .area{
+            display: flex;
+            gap: 30px;
+        }
+        .text-box{
+            margin-top: 500px;
+        }
+        .text-box>h2{
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .sticky-img{
+            position: sticky;
+            height: 100vh;
+            top:0;
+            object-fit: cover;
+        }
+        .area > figure{
+            width: 50%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="margin-section"></section>
+
+    <div class="area">
+        <figure>
+            <img class="sticky-img" src="../img/forest.png" alt="이모티콘"  >
+        </figure>
+
+        <div class="text-container">
+            <div class="text-box">
+                <h2>TEXT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quaerat?</p>
+            </div>
+            <div class="text-box">
+                <h2>TEXT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quaerat?</p>
+            </div>
+            <div class="text-box">
+                <h2>TEXT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quaerat?</p>
+            </div>
+            <div class="text-box">
+                <h2>TEXT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quaerat?</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="margin-section"></section>
+</body>
+</html>

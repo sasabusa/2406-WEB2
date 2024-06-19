@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #222;
+        }
+        .box{
+            width: 40px;
+            height: 40px;
+            background-color: gray;
+            position: absolute;
+            /* left: 100%;
+            margin-left: 16px; */
+            left: calc(100% + 16px)
+        }
+        .for-center{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="for-center"></div>
+    </div>
+</body>
+</html>
