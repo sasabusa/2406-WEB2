@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+        .pack {
+            width: 100px;
+            height: 100px;
+            animation: movem infinite alternate linear 10s;
+        }
+        .m{
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+           
+
+  
+        }
+        .top-m{
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            transform-origin: bottom;
+            animation: bite-up infinite alternate linear 0.2s;
+            
+        }
+        .bottom-m{
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            transform-origin: top;
+            animation: bite-down infinite alternate linear 0.2s;
+ 
+        }
+
+        @keyframes bite-up {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(30deg);
+            }
+            
+        }
+        @keyframes bite-down {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-30deg);
+            }
+        }
+
+        @keyframes movem{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="pack">
+        <div class="m top-m"></div>
+        <div class="m bottom-m"></div>
+    </div>
+</body>
+</html>
