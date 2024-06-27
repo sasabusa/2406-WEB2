@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .wrap{
+            display: flex;
+            gap: 20px;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle_inner{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 0%;
+            position: absolute;
+            /* left: 100px;
+            margin-left: 50px; */
+            /* left: calc(100px+25px); */
+            /* top: 50%;
+            left: 50%; */
+           
+
+            animation: loading infinite 2s linear;
+ 
+        }
+
+        @keyframes loading{
+                from{
+                    transform: rotate(0deg)
+                }
+
+                to{
+                    transform: rotate(360deg)
+                }
+            }
+
+            .container2{
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                /* display: absolute; */
+            }
+            .circle2-1{
+                width: 200px;
+                height: 200px;
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                
+                animation: circle2-1 infinite 2s linear;
+
+            }
+            .circle2-2{
+                width: 200px;
+                height: 200px;
+                background-color: #797979;
+                border-radius: 50%;
+
+                animation: circle2-2 infinite 2s linear;
+                animation-delay: 2s;
+                position: absolute;
+
+
+            }
+            .circle2-3{
+                width: 200px;
+                height: 200px;
+                background-color: #2e2d2d;
+                border-radius: 50%;
+
+                animation: circle2-3 infinite 2s linear;
+                animation-delay: 4s;
+                position: absolute;
+
+
+            }
+
+            @keyframes circle2-1{
+                from{
+                    transform: scale(0.1);
+                    
+                }
+                to{
+                    transform: scale(0.5)
+                }
+            }
+            @keyframes circle2-2{
+                from{
+                    transform: scale(0.5);
+                    
+                }
+                to{
+                    transform: scale(1)
+                }
+            }
+            @keyframes circle2-3{
+                from{
+                    transform: scale(1);
+                    
+                }
+                to{
+                    transform: scale(1.5)
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="circle">
+                <div class="circle_inner">
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="circle2-1"></div>
+            <div class="circle2-2"></div>
+            <div class="circle2-3"></div>
+        </div>
+    </div>
+
+</body>
+</html>
