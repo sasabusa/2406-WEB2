@@ -38,6 +38,16 @@
             flex-direction: column;
             gap: 20px;
         }
+        .container > h1{
+            line-height: 1.21;
+        }
+        .container a{
+            color:#0DCB67;
+            font-weight: 700;
+        }
+        .container .container-list, a{
+            font-size: 13px;
+        }
         .login-box{
             width: 340px;
             height: 54px;
@@ -87,6 +97,54 @@
         .list3-box{
             display: flex;
             flex-direction: column;
+            gap: 15px;
+        }
+        .list3-box>h2{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .list3-box > p{
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .all-band-list > h2{
+            font-size: 24px;
+        }
+        .list-container  img{
+            border-radius: 15px;
+        }
+        .list-flex{
+            display: flex;
+            gap: 15px;
+        }
+        .inner-list-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .inner-list-flex  h2, p{
+            font-size: 14px;
+        }
+        .inner-list-flex  h2{
+            font-weight: 600;
+        }
+        .member{
+            display: flex;
+        }
+        .more{
+            font-size: 12px;
+            background-color: white;
+            padding: 7px 15px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        .all-band-list{
+            padding: 30px;
+            background-color: #f5f6f8;
+        }
+        .all-band-list h2{
+            margin-top: 26px;
+            margin-bottom: 19px;
         }
     </style>
 </head>
@@ -114,9 +172,9 @@
                 <p>당신의 모임도 BAND로 시작하세요.</p>
                 <div class="login-box">로그인</div>
                 <div class="signup-box">회원가입</div>
-                <div>내게 맞는 밴드를 만나려면 <a href="">밴드찾기</a></div>
-                <div>모임별 밴드 활용법 밴드 <a href="">가이드 보기</a></div>
-                <div>만 13세 미만이라면?'밴드 키즈' <a href="">알아보기</a></div>
+                <div class="container-list">내게 맞는 밴드를 만나려면 <a href="">밴드찾기</a></div>
+                <div class="container-list">모임별 밴드 활용법 밴드 <a href="">가이드 보기</a></div>
+                <div class="container-list">만 13세 미만이라면?'밴드 키즈' <a href="">알아보기</a></div>
             </div>
         </div>
     </section>
@@ -160,21 +218,23 @@
         <section class="list-container">
             <div class="left-list">
                 <a href="">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <div>
-                        <a href="">
-                            <h2>문화역사 유적지 소개</h2>
-                        </a>
-                        <p>각종 언론매체에 보도된 문화유적지 자료를 찾아서 필요하신분...</p>
-                        <div>
-                            <p>멤버 1,057</p>
-                            <p>리더 이상섭/60/인천</p>
+                    <div class="list-flex">
+                        <figure>
+                            <img src="../img/list-photo.jpg" width="93" height="93"  alt="">
+                        </figure>
+                        <div class="inner-list-flex">
+                            <a href="">
+                                <h2>문화역사 유적지 소개</h2>
+                            </a>
+                            <p>각종 언론매체에 보도된 문화유적지 자료를 찾아서 필요하신분...</p>
+                            <div class="member">
+                                <p>멤버 1,057</p>
+                                <p>리더 이상섭/60/인천</p>
+                            </div>
+                            <div class="more">문화역사 밴드 더보기></div>
                         </div>
-                        <div>문화역사 밴드 더보기></div>
+                    </div>
                 </a>
-                </div>
             </div>
 
         </section>
